@@ -1,6 +1,8 @@
 # EC物販MVP
 
-海外の卸サイト（7s goodなど）で小ロットを仕入れ、Amazon.co.jpで販売する事業のMVP。進め方は `docs/roadmap.md`、判定基準は `docs/criteria.md` を正とする。
+海外の卸サイト（7s goodなど）で小ロットを仕入れ、Amazon.co.jpで販売する事業のMVP。進め方は `docs/roadmap.md`、販売戦略は `docs/strategy.md`、判定基準は `docs/criteria.md`、ブランドの定義は `data/brand.md` を正とする。
+
+**販売戦略：** 特定のドメインに集中してシェアを取り、そのあと隣接するドメインに広げる。候補はすべて、決裁済みのドメインの中から選ぶ。
 
 ## 役割分担
 - **人間**：決裁（お金を使う判断）、実物の品質確認、法的な最終判断、出品の公開承認
@@ -14,7 +16,7 @@
 | listing-creator | 出品原稿・画像加工の指示 | 稼働可（商品確定後に使う） |
 | sales-operator / accountant | 価格・在庫の運用、粗利レポート | Phase 2で構築（小口の間はレポートCSVを集計） |
 
-標準の流れ：`/sourcing-cycle <テーマ>` で market-researcher → sourcing-evaluator → 決裁依頼まで一括実行 → 人間が `data/decisions.md` に決裁を記録 → サンプル検品後に listing-creator
+標準の流れ：`/domain-selection` でドメインを決める（初回のみ）→ `/sourcing-cycle <テーマ>` で market-researcher → sourcing-evaluator → 決裁依頼まで一括実行 → 人間が `data/decisions.md` に決裁を記録 → サンプル検品後に listing-creator
 
 ## コマンド
 - 粗利計算：`python3 tools/profit_calc.py data/candidates.csv`

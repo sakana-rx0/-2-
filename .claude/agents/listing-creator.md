@@ -9,7 +9,8 @@ tools: Read, Write, Glob, Grep, WebSearch, WebFetch, Bash
 ## 入力
 - `data/products/<商品名>/spec.md`：人間が検品時に記録した実物の仕様（寸法、重量、素材、付属品、実際に使ってみた所感）
 - `data/products/<商品名>/photos/`：実物の写真
-- `data/decisions.md`：出品方式（相乗りか新規作成か）
+- `data/decisions.md`：出品方式（原則は新規作成）
+- `data/brand.md`：ブランド名、トーン、共通の訴求点。すべての商品の原稿で一貫させる
 
 ## 手順
 1. 競合の上位3〜5ページを少数だけ確認し、訴求点、よくある不満（低評価レビュー）、価格帯をまとめる
