@@ -46,6 +46,11 @@ class EvaluateTest(unittest.TestCase):
         r = profit_calc.evaluate(row(category="不明"), CFG)
         self.assertEqual(r["profit_jpy"], 3700)
 
+    def test_per_item_fee(self):
+        cfg = {**CFG, "amazon": {**CFG["amazon"], "per_item_fee_jpy": 100}}
+        r = profit_calc.evaluate(row(), cfg)
+        self.assertEqual(r["profit_jpy"], 4100)
+
     def test_explicit_referral_overrides(self):
         r = profit_calc.evaluate(row(referral_rate="0.08"), CFG)
         self.assertEqual(r["profit_jpy"], 4400)

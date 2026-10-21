@@ -12,7 +12,7 @@
 | market-researcher | 候補の洗い出し | 稼働可 |
 | sourcing-evaluator | 粗利試算・規制チェック・決裁用の提案書 | 稼働可 |
 | listing-creator | 出品原稿・画像加工 | Phase 1で構築 |
-| sales-operator / accountant | 価格・在庫・広告の運用、粗利レポート | Phase 2で構築（SP-API接続後） |
+| sales-operator / accountant | 価格・在庫の運用、粗利レポート | Phase 2で構築（小口の間はレポートCSVを集計） |
 
 標準の流れ：market-researcher → sourcing-evaluator → 人間の決裁
 

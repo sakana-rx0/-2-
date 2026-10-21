@@ -46,10 +46,11 @@ def evaluate(row, cfg):
 
     referral = sell * referral_rate(row, cfg)
     fba = float(row["fba_fee_jpy"])
+    per_item = cfg["amazon"].get("per_item_fee_jpy", 0)
     ad = sell * cfg["costs"]["ad_rate"]
     returns = sell * cfg["costs"]["return_rate"]
 
-    profit = sell - referral - fba - ad - returns - landed
+    profit = sell - referral - per_item - fba - ad - returns - landed
     margin = profit / sell
     th = cfg["thresholds"]
     reasons = []
