@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/inbox/
+data/candidates_scored.csv
