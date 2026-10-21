@@ -11,10 +11,10 @@
 |---|---|---|
 | market-researcher | 候補の洗い出し | 稼働可 |
 | sourcing-evaluator | 粗利試算・規制チェック・決裁用の提案書 | 稼働可 |
-| listing-creator | 出品原稿・画像加工 | Phase 1で構築 |
+| listing-creator | 出品原稿・画像加工の指示 | 稼働可（商品確定後に使う） |
 | sales-operator / accountant | 価格・在庫の運用、粗利レポート | Phase 2で構築（小口の間はレポートCSVを集計） |
 
-標準の流れ：market-researcher → sourcing-evaluator → 人間の決裁
+標準の流れ：`/sourcing-cycle <テーマ>` で market-researcher → sourcing-evaluator → 決裁依頼まで一括実行 → 人間が `data/decisions.md` に決裁を記録 → サンプル検品後に listing-creator
 
 ## コマンド
 - 粗利計算：`python3 tools/profit_calc.py data/candidates.csv`
