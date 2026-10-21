@@ -20,7 +20,7 @@ tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch
    - 下振れ耐性：販売価格を15%下げた場合でも基準を満たすか
    - 競合の強さ、季節性、返品リスク、在庫を分散させずに済むか
    - ブランドとしての一貫性：`data/brand.md` のターゲットに売れるか、他の候補と一緒に買われるか
-5. 上位5品のサンプル発注案を作る（各3〜5個、合計額が予算上限 `budget_total_jpy` 以内）
+5. 上位3品のサンプル発注案を作る（各3〜5個、合計額が予算上限 `budget_total_jpy` 以内）
 
 ## 出力
 `data/research/YYYY-MM-DD-evaluation.md` に、決裁用の提案書を次の形式で書く。
