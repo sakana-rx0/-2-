@@ -2,6 +2,8 @@
 
 海外の卸サイト（7s goodなど）で小ロットを仕入れ、Amazon.co.jpで販売する事業のMVP。進め方は `docs/roadmap.md`、販売戦略は `docs/strategy.md`、判定基準は `docs/criteria.md`、ブランドの定義は `data/brand.md` を正とする。
 
+**基本ルール（事業継続のハードル）：** `docs/hurdles.md` を最上位の判断基準とする。①検証：実績粗利率20%以上 → ②自走：実質時給5,000円以上を2か月連続 → ③安定：事業利益が月10万円以上（時給条件も維持）を3か月連続。各段階に期限があり、未達なら撤退かドメインの変更を判断する。拡大・撤退の提案は、必ずこの段階に照らして行う。
+
 **販売戦略：** 特定のドメインに集中してシェアを取り、そのあと隣接するドメインに広げる。候補はすべて、決裁済みのドメインの中から選ぶ。
 
 ## 役割分担
@@ -20,4 +22,6 @@
 
 ## コマンド
 - 粗利計算：`python3 tools/profit_calc.py data/candidates.csv`
+- ハードル判定（月次）：`python3 tools/hurdle_check.py`（`data/monthly.csv` に実績を記入してから）
+- 作業時間の記録：`data/timelog.csv`（日付、時間、作業内容）
 - テスト：`python3 -m unittest discover -s tests`

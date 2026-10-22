@@ -30,3 +30,20 @@ default_referral_rate = 0.15
 "DIY・工具" = 0.15
 "ペット用品" = 0.15
 "ホビー" = 0.10
+
+# 事業継続のハードル（docs/hurdles.md）
+[hurdles]
+stage1_min_realized_margin = 0.20
+# ②③共通：実質時給（事業利益 ÷ 作業時間）の下限
+min_hourly_jpy = 5000
+stage2_consecutive_months = 2
+stage3_min_monthly_profit_jpy = 100000
+stage3_consecutive_months = 3
+
+# 月額の固定費。🧑 実際の契約に合わせて更新する
+[fixed_costs]
+# Claude Max（20xプランを想定）。他の用途と共用でも、保守的に全額を計上する
+claude_jpy = 30000
+# 大口出品の月額。小口の間は0、切り替えたら4900
+amazon_pro_jpy = 0
+other_jpy = 0
