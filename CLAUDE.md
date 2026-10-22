@@ -1,6 +1,6 @@
 # EC物販MVP
 
-海外の卸サイト（7s goodなど）で小ロットを仕入れ、Amazon.co.jpで販売する事業のMVP。進め方は `docs/roadmap.md`、販売戦略は `docs/strategy.md`、判定基準は `docs/criteria.md`、ブランドの定義は `data/brand.md` を正とする。
+海外の卸サイト（7s goodなど）で小ロットを仕入れ、Amazon.co.jpで販売する事業のMVP。進め方は `docs/roadmap.md`、販売戦略は `docs/strategy.md`（評価と座組の見直しは `docs/strategy-review.md`）、判定基準は `docs/criteria.md`、ブランドの定義は `data/brand.md` を正とする。
 
 **基本指針：** `docs/hurdles.md` を最上位の判断基準とする。①検証 → ②自走 → ③安定の3段階を、実績の事業利益と実質時給で判定する。合格ラインの数値はパラメータとして `config/assumptions.toml` で管理し、状況に応じて見直す。ただし、判定期間の途中や判定の直後に、未達を合格にするために合格ラインを下げてはならない。拡大・撤退の提案は、必ず現在の段階に照らして行う。
 
