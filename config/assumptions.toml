@@ -31,7 +31,7 @@ default_referral_rate = 0.15
 "ペット用品" = 0.15
 "ホビー" = 0.10
 
-# 事業継続のハードル（docs/hurdles.md）
+# 事業判断のパラメータ（docs/hurdles.md）。変更するときは同文書の変更ルールに従い、data/decisions.md に記録する
 [hurdles]
 stage1_min_realized_margin = 0.20
 # ②③共通：実質時給（事業利益 ÷ 作業時間）の下限
@@ -42,8 +42,8 @@ stage3_consecutive_months = 3
 
 # 月額の固定費。🧑 実際の契約に合わせて更新する
 [fixed_costs]
-# Claude Max（20xプランを想定）。他の用途と共用でも、保守的に全額を計上する
-claude_jpy = 30000
+# Claude Max（20xプラン）。他の用途と共用でも、保守的に全額を計上する
+claude_jpy = 42500
 # 大口出品の月額。小口の間は0、切り替えたら4900
 amazon_pro_jpy = 0
 other_jpy = 0
