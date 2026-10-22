@@ -7,20 +7,20 @@ cny_jpy = 22.0
 [thresholds]
 min_margin_rate = 0.30
 min_profit_jpy = 500
-# 🧑 MVP全体の予算上限（サンプル代＋テスト仕入れ）
-budget_total_jpy = 100000
+# 🧑 MVP全体の予算上限（2回の試行分。サンプル・仕入れ・商標・JAN・大口の月額・広告を含む）
+budget_total_jpy = 150000
 
 [costs]
-# 販売価格に対する広告費の割合。小口出品はスポンサー広告を使えないため0。大口に切り替えたら0.10程度に
-ad_rate = 0.0
+# 販売価格に対する定常時の広告費の割合。立ち上げ期の追加の広告費・値引きは「検証費」として別枠で計上する
+ad_rate = 0.10
 # 返品・不良に備える引当の割合
 return_rate = 0.03
 # 輸入消費税（国税と地方税の合計）。免税事業者の間は仕入れ控除できないため、原価に含める
 import_consumption_tax_rate = 0.10
 
 [amazon]
-# 小口出品の基本成約料（1点売れるごと）。大口に切り替えたら0にする
-per_item_fee_jpy = 100
+# 小口出品の基本成約料（1点売れるごと）。大口出品の間は0、小口に戻したら100
+per_item_fee_jpy = 0
 # カテゴリ別の販売手数料率。参考値なので、セラーセントラルの最新の手数料表で必ず確認すること
 default_referral_rate = 0.15
 
@@ -44,6 +44,6 @@ stage3_consecutive_months = 3
 [fixed_costs]
 # Claude Max（20xプラン）。他の用途と共用でも、保守的に全額を計上する
 claude_jpy = 42500
-# 大口出品の月額。小口の間は0、切り替えたら4900
-amazon_pro_jpy = 0
+# 大口出品の月額。小口に戻したら0
+amazon_pro_jpy = 4900
 other_jpy = 0

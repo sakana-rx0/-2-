@@ -9,7 +9,8 @@ tools: Read, Write, Glob, Grep, WebSearch, WebFetch, Bash
 ## 入力
 - `data/products/<商品名>/spec.md`：人間が検品時に記録した実物の仕様（寸法、重量、素材、付属品、実際に使ってみた所感）
 - `data/products/<商品名>/photos/`：実物の写真
-- `data/decisions.md`：出品方式（原則は新規作成）
+- `data/decisions.md`：出品方式（新規作成。ブランド登録が済んでいれば、商品紹介コンテンツ（A+）も作る）
+- セットの内容：同梱物は、それぞれの価値が伝わるように画像と箇条書きで明示する
 - `data/brand.md`：ブランド名、トーン、共通の訴求点。すべての商品の原稿で一貫させる
 
 ## 手順
