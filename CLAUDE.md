@@ -25,3 +25,7 @@
 - ハードル判定（月次）：`python3 tools/hurdle_check.py`（`data/monthly.csv` に実績を記入してから）
 - 作業時間の記録：`data/timelog.csv`（日付、時間、作業内容）
 - テスト：`python3 -m unittest discover -s tests`
+
+## 人生ゲーム（`life/`）
+- EC事業とは別に、本人の人生設計のルールブックと記録を `life/` に置いている。`life/rulebook.md` を正とし、減量・体づくりの記録は `life/body/` に書く
+- Claudeが設定する通知・リマインダーは、Googleカレンダーの「Claudeアクション管理」カレンダーに一元化する（メインのカレンダーには作らない）
